@@ -1,0 +1,154 @@
+/* General Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px; /* Slightly larger max width */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Carousel Wrapper */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Slide */
+.carousel-slide {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    height: 600px; /* Increased height for the slide */
+}
+
+/* Glassmorphism Effect for Content */
+.carousel-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+    padding: 40px 60px; /* Increased padding for better proportions */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    width: 700px; /* Increased width */
+    height: 450px; /* Increased height */
+    color: white;
+    text-align: center;
+    font-size: 25px; /* Larger font size */
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 0px;
+    color: #186db3; ;
+}
+#content{
+    font-weight: bold;
+    color:darkgrey;
+}
+/* Add Scaling Animation to Slides */
+.carousel-content:hover {
+    transform: scale(1.05); /* Subtle scaling on hover */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 2;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover Effects */
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.4); /* Smooth color change */
+    color: rgba(50, 50, 50, 0.8); /* Slightly darken the arrow for contrast */
+    transform: translateY(-50%) scale(1.15); /* Subtle scaling */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+/* Active Button Effect (When Clicking) */
+.carousel-btn:active {
+    transform: translateY(-50%) scale(1.05); /* Slight shrink to give feedback */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Reduce shadow depth */
+}
+
+/* Specific Button Positions */
+.carousel-btn.prev {
+    left: 20px;
+}
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+/* Smooth Animation Transition for Buttons */
+.carousel-btn {
+    animation: buttonAppear 0.6s ease-in-out;
+}
+
+/* Keyframe Animation for Button Appearance */
+@keyframes buttonAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Responsive Media Query */
+@media (min-width: 481px) and (max-width: 1200px) {
+    .carousel-container {
+        width: 95%; /* Slightly increase the width for smaller screens */
+        height: 600px;
+    }
+
+    .carousel-slide {
+        height: 450px; /* Reduce slide height */
+    }
+
+    .carousel-content {
+        width: 90%; /* Reduce content width */
+        height: auto; /* Allow dynamic height */
+        padding: 30px 20px; /* Reduce padding */
+        font-size: 20px; /* Reduce font size */
+        border-radius: 25px;
+    }
+
+    #title {
+        font-size: 35px; /* Smaller title */
+    }
+
+    #content {
+        font-size: 18px; /* Smaller content font size */
+    }
+
+    .carousel-btn {
+        font-size: 1.5rem; /* Smaller button size */
+        padding: 10px; /* Smaller button padding */
+    }
+}

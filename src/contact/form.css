@@ -1,0 +1,120 @@
+.contact-section {
+    margin-top: 2rem; /* Creates space above the Contact section */
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+/* Contact Form Container with Glass Morphism */
+.contact-form-container {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #ddd;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 890px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2196f3;
+    background: rgba(255, 255, 255, 0.2);
+ 
+}
+/* Submit Button */
+.submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #2196f3 ;
+    border-radius: 20px;
+    background-color:  #0b132b;
+    color: #2196f3;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.submit-btn:hover {
+    background-color: #2196f3;
+    color: #0b132b;
+    transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (min-width: 481px) and (max-width: 1200px) {
+    .contact-form-container {
+        max-width: 700px; /* Reduced max width */
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px; /* Slightly smaller font size */
+        width: auto ;
+    }
+
+    .submit-btn {
+        font-size: 14px; /* Reduced button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-container {
+        max-width: 90%; /* Adjusted width for smaller screens */
+        padding: 10px; /* Compact padding */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px; /* Smaller font size for inputs */
+        width: auto ;
+    }
+
+    .submit-btn {
+        font-size: 12px;
+        padding: 8px 15px; /* Adjusted button size */
+    }
+}
