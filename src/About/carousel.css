@@ -4,7 +4,7 @@
     width: 80%;
     max-width: 1200px; /* Slightly larger max width */
     margin: auto;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 /* Carousel Wrapper */
@@ -25,7 +25,7 @@
 
 /* Glassmorphism Effect for Content */
 .carousel-content {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(129, 122, 122, 0.1);
     backdrop-filter: blur(25px);
     border-radius: 25px;
     padding: 40px 60px; /* Increased padding for better proportions */

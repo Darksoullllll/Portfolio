@@ -25,11 +25,10 @@ function Home(){
         <div className="container" id="homesection">
             <div id="about">
                 <h1>Hi,I&apos;m Abhinav Gautam</h1>
-                <h2>Artifical Engineer and Front End Dev</h2>
+                <h2>AI Engineer</h2>
                 <p>
-                I&apos;m a student and pursuing My B.Tech in the computer science 
-                with specilization in the Data Science and Machine learning 
-                with a experience in the Front End.
+                A B.Tech Computer Science graduate (specialization in AI, ML, & Data Science) currently
+                working as a Software Development Engineer at Samsung R&D Delhi. 
                 </p>
                 <div className = "buttons">
                     <button id ="cont" onClick = {go_to_contact}>Contact</button>

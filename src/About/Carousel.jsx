@@ -9,18 +9,18 @@ function Carousel() {
         {   
             key: 1,
             title: "Who I'm ", 
-            content: "Hi, I'm Abhinav Gautam, a passionate fresher actively seeking exciting job opportunities. Based in India, I specialize in Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL) technologies, aiming to solve complex problems with innovative solutions. Alongside my interest in AI, I have honed my skills in frontend development, creating intuitive and user-friendly web interfaces." 
+            content: "Hi, I'm Abhinav Gautam, a passionate Software Development Engineer (SDE) currently working at Samsung R&D Delhi. Based in India, I specialize in Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL), with a focus on building innovative solutions to solve complex real-world problems. Alongside my expertise in AI, I’ve also developed strong skills in frontend development, creating intuitive and user-friendly web interfaces that bridge technology and design seamlessly." 
         },
         {   
             key: 2,
             title: "My Education",
-            content: "I hold a B.Tech in Computer Science, specializing in Data Science, with a CGPA of 8.9. I completed my secondary education at Kendriya Vidyalaya Pragati Vihar, New Delhi." 
+            content: "I hold a B.Tech in Computer Science with a specialization in Data Science, achieving a CGPA of 9.3. I completed my secondary education at Kendriya Vidyalaya Pragati Vihar, New Delhi." 
         },
         {   
 
             key: 3,
             title: "Tech I Used", 
-            content: "My tech stack includes Python, React, JavaScript, C++, Scikit-learn, and TensorFlow, which I utilize to build innovative and efficient solutions." 
+            content: "With hands-on experience in Python, TensorFlow, Scikit-learn, React, JavaScript, and C++, I focus on creating data-driven and intelligent systems that deliver practical, innovative solutions." 
         },
     ];
 
